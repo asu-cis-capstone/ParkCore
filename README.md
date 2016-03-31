@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/asu-cis-capstone/ParkCore.png?label=ready&title=Ready)](https://waffle.io/asu-cis-capstone/ParkCore)
 # ParkCore
 
 -Kao Smith, Larisa Muka, Sophia Nguyen, River Zhou
