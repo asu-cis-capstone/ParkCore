@@ -10,6 +10,7 @@ The purpose of this project is to provide a digital solution to the everyday pro
 
 Key Metrics:
 1.) The time difference to park with and without the app.
+
 2.) User Interface interpretation
 - These will measure the functionality and concept of the app to see if users can easily navigate and interpret what our app does based off of the primary map view.
 
