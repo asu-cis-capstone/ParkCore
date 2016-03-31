@@ -6,6 +6,6 @@
 - Sophia Nguyen
 - River Zhou
 
-The purpose of this project is to provide a digital solution to the everyday problem of parking. Currently there is a problem with parking spots and parking lots, and the creation of ParkCore will help by providing an accurate and live map that displays the available parking spots.
+The purpose of this project is to provide a digital solution to the everyday problem of parking. Currently there is a problem with parking spots and parking lots, and the creation of ParkCore will help by providing an accurate and live map that displays the available parking spots. App users will easily be able to find a spot, and get to there destination as quickly as possible.
 
 repo for project ParkCore
