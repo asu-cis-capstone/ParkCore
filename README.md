@@ -15,4 +15,8 @@ Key Metrics:
 2.) User Interface interpretation
 - These will measure the functionality and concept of the app to see if users can easily navigate and interpret what our app does based off of the primary map view.
 
+The images below are inital mock-up concents of the to-be app:
 
+<img src="Mock-up 1.PNG" alt="Home" height=550>
+<img src="Mock-up 2.PNG" alt="Home" height=550>
+<img src="Mock-up 3.PNG" alt="Home" height=550>
