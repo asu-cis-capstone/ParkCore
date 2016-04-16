@@ -27,6 +27,15 @@ The images below are initial mock-up concepts of the to-be app:
 
 <title>Sprint Review 1</title>
 
-<img src="Heat map 1.png" alt="Home">
-<img src="Heat map 2.png" alt="Selection">
-<img src="Heat map 3.png" alt="Map">
+For Sprint Review 1 the initial mock-ups of the app were uploaded to UsabilityHub and a navigation test was created to measure how successfully users navigate the app. Displayed below are the heat maps of user clicks for the conducted test.  
+
+<img src="Heat map 1.png" alt="Home hm">
+<img src="Heat map 2.png" alt="Selection hm" height=400>
+<img src="Heat map 3.png" alt="Parking hm" height=400>
+
+The percentage for users that successfully clicked in the designated hit zones of the app according the instruction provided are 98%, 76%, and 66.5% respectively for images 1 through 3.
+
+The results from a brief survey completed to gather additional data from the navigation test participants are displayed below:
+- 81% of users were able to successfully navigate the app until the end of the test
+- One a scale from 1 to 5, user interface was given a rating of 4 and 5 by 87% of users
+- 93% would tell their friends about this app
