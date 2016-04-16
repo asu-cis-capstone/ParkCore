@@ -27,6 +27,6 @@ The images below are initial mock-up concepts of the to-be app:
 
 <title>Sprint Review 1</title>
 
-<img src="Heat map 1.PNG" alt="Home">
-<img src="Heat map 2.PNG" alt="Selection">
-<img src="Heat map 3.PNG" alt="Map">
+<img src="Heat map 1.png" alt="Home">
+<img src="Heat map 2.png" alt="Selection">
+<img src="Heat map 3.png" alt="Map">
