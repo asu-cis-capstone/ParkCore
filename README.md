@@ -37,5 +37,5 @@ The percentage for users that successfully clicked in the designated hit zones o
 
 The results from a brief survey completed to gather additional data from the navigation test participants are displayed below:
 - 81% of users were able to successfully navigate the app until the end of the test
-- One a scale from 1 to 5, user interface was given a rating of 4 and 5 by 87% of users
+- On a scale from 1 to 5, user interface was given a rating of 4 and 5 by 87% of users
 - 93% would tell their friends about this app
