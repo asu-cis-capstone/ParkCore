@@ -39,3 +39,15 @@ The results from a brief survey completed to gather additional data from the nav
 - 81% of users were able to successfully navigate the app until the end of the test
 - On a scale from 1 to 5, user interface was given a rating of 4 and 5 by 87% of users
 - 93% would tell their friends about this app
+
+<title>Sprint Review 2</title>
+
+A real driving situation in conjunction with a paper prototype of the app was conducted to measure the parking app’s efficiency. The experiment consisted of 2 independent drivers attempting to park in pre-determined locations, where one driver was equipped with the app prototype. A third drivers had found a parking spot in advance and had related that information to the driver using the app. In the experiment both drivers departed from the same location. Results are displayed below:
+
+- Test Location 1: From Taco Bell (Rural and Apache) to Mill Avenue
+- Time to park without app: 7 minutes 12 seconds
+- Time to park with app: 5 minutes 29 seconds
+
+- Test Location 2: From Normal Dinner (Apache and Normal) to metered parking (between Rural and McAllister)
+- Time to park without app: 3 minutes 18 seconds
+- Time to park with app: 1 minutes 15 seconds
