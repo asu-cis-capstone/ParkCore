@@ -51,3 +51,11 @@ Test Location 1: From Taco Bell (Rural and Apache) to Mill Avenue
 Test Location 2: From Normal Dinner (Apache and Normal) to metered parking (between Rural and McAllister)
 - Time to park without app: 3 minutes 18 seconds
 - Time to park with app: 1 minutes 15 seconds
+
+<title>Sprint Review 3</title>
+
+A second iteration of the UI navigation test was completed on UsabilityHub to measure functionality for the latest version of the app created through Swift. A total of 12 responses were collected and the average duration for each user to navigate the app was 20.8 seconds. Heat map of the navigation test and the new app interface are displayed below:
+
+<img src="App 1.png" alt="Select" height=230>
+<img src="App 2.png" alt="Map" height=230>
+<img src="HM 2.png" alt="HM" height=230>
