@@ -1,0 +1,141 @@
+﻿//  Tutorial on Swift and Google Maps from https://www.youtube.com/watch?v=8wPjCdDn2wo&nohtml5=False
+//  ViewController.swift
+//  TestGoogleMaps
+//
+//  Created by Kao Smith on 4/7/16.
+//  Copyright © 2016 Kao Smith. All rights reserved.
+
+
+
+
+import UIKit
+import GoogleMaps
+
+
+class lotNames: NSObject {
+    let name: String?
+    let location: CLLocationCoordinate2D?
+    let zoom: Float
+    
+    init(name: String, location: CLLocationCoordinate2D, zoom: Float) {
+        self.name = name
+        self.location = location
+        self.zoom = zoom
+    }
+    
+} // end of class lotNames
+
+
+class ViewController: UIViewController {
+    
+    //variables
+    var mapView: GMSMapView?
+    var currentLot: lotNames?
+   // var newMarker = UIImage(CGImage: logoParkCore.png)
+    
+    
+    let lots = [lotNames(name: "Space 201", location: CLLocationCoordinate2DMake(33.414786, -111.932657), zoom: 16), lotNames(name: "Space 305", location: CLLocationCoordinate2DMake(33.414786, -111.931665), zoom: 16), lotNames(name: "Space 405", location: CLLocationCoordinate2DMake(33.414573, -111.931985), zoom: 16), lotNames(name: "Space 405", location: CLLocationCoordinate2DMake(33.414609, -111.932688), zoom: 16)]
+    
+    
+    override func viewDidLoad() {
+        
+        super.viewDidLoad()
+        
+        GMSServices.provideAPIKey("AIzaSyA70yzi4lnxG9qMB7fnhh4KySoZDv6Iogc")
+        
+        // starting location
+        let camera = GMSCameraPosition.cameraWithLatitude(33.414786, longitude: -111.932222, zoom: 18)
+        mapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
+        view = mapView
+        
+
+
+        // coord apache blvd
+        let currentLocation = CLLocationCoordinate2DMake(33.414786, -111.932222)
+        let marker = GMSMarker(position: currentLocation)
+        // marker properties
+        marker.icon = UIImage(named: "greenCircle.png")
+        marker.title = "Space 200"
+        marker.snippet = "Apache Blvd Parking"
+        marker.map = mapView
+        
+        // available spot coordinates
+        let available1 = CLLocationCoordinate2DMake(33.414630, -111.931488)
+        let avalmarker = GMSMarker(position: available1)
+        avalmarker.icon = UIImage(named: "greenCircle.png")
+        avalmarker.title = "Space 202"
+        avalmarker.snippet = "Apache Blvd Parking"
+        avalmarker.map = mapView
+
+
+        // taken spots coordinates
+        let lot1 = CLLocationCoordinate2DMake(33.414616, -111.932173)
+        let marker1 = GMSMarker(position: lot1)
+        marker1.icon = UIImage(named: "redCircle.png")
+        marker1.title = "Space 401"
+        marker1.snippet = "Apache Blvd Parking"
+        marker1.map = mapView
+        
+        // taken spots coordinates
+        let lot2 = CLLocationCoordinate2DMake(33.414608, -111.932569)
+        let marker2 = GMSMarker(position: lot2)
+        marker2.icon = UIImage(named: "redCircle.png")
+        marker2.title = "Space 402"
+        marker2.snippet = "Apache Blvd Parking"
+        marker2.map = mapView
+        
+        // taken spots coordinates
+        let lot3 = CLLocationCoordinate2DMake(33.414612, -111.931762)
+        let marker3 = GMSMarker(position: lot3)
+        marker3.icon = UIImage(named: "redCircle.png")
+        marker3.title = "Space 403"
+        marker3.snippet = "Apache Blvd Parking"
+        marker3.map = mapView
+        
+        // taken spots coordinates
+        let lot4 = CLLocationCoordinate2DMake(33.414603, -111.931111)
+        let marker4 = GMSMarker(position: lot4)
+        marker4.icon = UIImage(named: "redCircle.png")
+        marker4.title = "Space 404"
+        marker4.snippet = "Apache Blvd Parking"
+        marker4.map = mapView
+        
+        // loop through spaces and display them
+        for var i = 0; i <= lots.count; i++ {
+            //if currentLot == nil{
+                currentLot = lots.first
+                
+                let marker = GMSMarker(position: currentLot!.location!)
+                marker.icon = UIImage(named: "greenCircle.png")
+                marker.title = currentLot!.name!
+                marker.snippet = "Apache Blvd Parking"
+                marker.map = mapView
+            
+            if let index = lots.indexOf(currentLot!) {
+                currentLot = lots[index + 1]
+            }
+            
+            setMapCamera()
+            
+        } // end of for loop
+        
+    } // end of override func viewDidLoad
+    
+    private func setMapCamera () {
+        CATransaction.begin()
+        CATransaction.setValue(2, forKey: kCATransactionAnimationDuration)
+        
+        // camera to move automatically
+        mapView?.animateToCameraPosition(GMSCameraPosition.cameraWithTarget(currentLot!.location!, zoom: currentLot!.zoom))
+        
+        CATransaction.commit()
+        
+        let marker = GMSMarker(position: currentLot!.location!)
+        
+        marker.title = currentLot!.name!
+        marker.snippet = "Permit Parking"
+        marker.map = mapView
+        
+    }
+    
+} // end of class View Controller
